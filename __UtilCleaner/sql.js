@@ -1,102 +1,129 @@
-var str=`330,'Rose',5,2248
-1233,'Angela',7,1296
-1901,'Frank',10,2763
-2035,'Patrick',1,4583
-2405,'Lisa',7,4350
-2974,'Kimberly',11,2874
-3190,'Bonnie',11,3758
-3506,'Michael',9,1936
-3708,'Todd',22,4046
-4428,'Joe',22,3802
-5962,'Earl',11,2958
-6060,'Robert',22,4128
-6418,'Amy',2,4832
-7466,'Pamela',1,4199
-9102,'Maria',11,2958
-11863,'Joe',18,1721
-12004,'Linda',15,2306
-12387,'Melissa',20,1854
-13835,'Carol',20,4340
-15151,'Paula',15,1526
-15286,'Marilyn',10,3087
-15675,'Jennifer',2,2336
-16493,'Harry',14,4755
-17858,'David',13,3658
-19035,'Julia',4,2195
-19172,'Kevin',1,2113
-21638,'Paul',6,3120
-22684,'James',14,1370
-23621,'Kelly',7,1923
-24011,'Robin',22,1880
-24611,'Ralph',22,1495
-25109,'Gloria',2,1979
-25120,'Victor',20,1557
-28247,'David',23,2212
-30183,'Joyce',20,2748
-30712,'Donna',8,2604
-32502,'Michelle',1,2086
-32654,'Stephanie',17,1444
-33086,'Gerald',23,2206
-33132,'Walter',11,4180
-37008,'Christina',8,3100
-38246,'Brandon',3,4339
-38272,'Elizabeth',23,3967
-38964,'Joseph',4,2194
-39789,'Lawrence',9,1872
-40797,'Marilyn',15,2112
-41228,'Lori',13,4350
-44436,'Matthew',15,4673
-45285,'Jesse',1,3768
-47458,'John',13,3104
-47496,'Martha',15,4020
-47920,'Timothy',10,1745
-48129,'Christine',22,3738
-50664,'Anthony',22,4912
-51741,'Paula',1,2492
-52923,'Kimberly',17,1955
-55238,'Louise',1,2717
-56775,'Martin',16,1385
-57065,'Paul',23,3379
-58343,'Antonio',21,3268
-59256,'Jacqueline',14,3913
-60119,'Diana',13,5149
-61191,'John',5,1775
-65288,'Dorothy',22,3792
-65375,'Evelyn',6,4079
-66442,'Phillip',9,1894
-67137,'Evelyn',15,1311
-68942,'Debra',20,3704
-69085,'David',11,1845
-69234,'Willie',12,5088
-69475,'Brandon',19,2279
-69787,'Ann',9,1311
-70963,'Emily',8,5247
-71569,'Dorothy',22,4088
-72030,'Jonathan',4,5009
-72370,'Dorothy',18,3174
-72785,'Marilyn',1,1860
-72974,'Norma',21,1558
-74662,'Nancy',6,3223
-76876,'Andrew',11,1746
-77609,'Keith',2,1219
-78101,'Benjamin',7,4414
-79744,'Charles',11,1911
-80475,'Alan',16,1853
-80895,'Tammy',8,1591
-81381,'Anna',16,1569
-82828,'James',23,4398
-85287,'Robin',23,2078
-87170,'Jean',18,3895
-87355,'Andrew',15,1446
-89017,'Roy',8,3443
-90507,'Diana',9,5101
-90558,'Christina',23,3498
-92908,'Jesse',13,4753
-95322,'Joyce',18,1577
-95983,'Patricia',23,1469
-96963,'Gregory',16,5071
-97178,'Brian',19,3144
-98271,'Christine',3,3796
-98491,'Lillian',3,1920`;
+var str=`'abw','aruba','north america','caribbean','193','null',103000,'78.4',828
+'afg','afghanistan','asia','southern and central asia','652090','1919',22720000,'45.9',5976
+'aia','anguilla','north america','caribbean','96','null',8000,'76.1',63
+'and','andorra','europe','southern europe','468','1278',78000,'83.5',1630
+'ant','netherlands antilles','north america','caribbean','800','null',217000,'74.7',1941
+'asm','american samoa','oceania','polynesia','199','null',68000,'75.1',334
+'atg','antigua and barbuda','north america','caribbean','442','1981',68000,'70.5',612
+'aus','australia','oceania','australia and new zealand','7741220','1901',18886000,'79.8',351182
+'bdi','burundi','africa','eastern africa','27834','1962',6695000,'46.2',903
+'bgd','bangladesh','asia','southern and central asia','143998','1971',129155000,'60.2',32852
+'bgr','bulgaria','europe','eastern europe','110994','1908',8190900,'70.9',12178
+'bhr','bahrain','asia','middle east','694','1971',617000,'73.0',6366
+'bhs','bahamas','north america','caribbean','13878','1973',307000,'71.1',3527
+'bih','bosnia and herzegovina','europe','southern europe','51197','1992',3972000,'71.5',2841
+'blz','belize','north america','central america','22696','1981',241000,'70.9',630
+'bmu','bermuda','north america','north america','53','null',65000,'76.9',2328
+'bra','brazil','south america','south america','8547403','1822',170115000,'62.9',776739
+'brb','barbados','north america','caribbean','430','1966',270000,'73.0',2223
+'brn','brunei','asia','southeast asia','5765','1984',328000,'73.6',11705
+'btn','bhutan','asia','southern and central asia','47000','1910',2124000,'52.4',372
+'bwa','botswana','africa','southern africa','581730','1966',1622000,'39.3',4834
+'can','canada','north america','north america','9970610','1867',31147000,'79.4',598862
+'cck','cocos (keeling) islands','oceania','australia and new zealand','14','null',600,'null',0
+'che','switzerland','europe','western europe','41284','1499',7160400,'79.6',264478
+'chl','chile','south america','south america','756626','1810',15211000,'75.7',72949
+'cmr','cameroon','africa','central africa','475442','1960',15085000,'54.8',9174
+'cog','congo','africa','central africa','342000','1960',2943000,'47.4',2108
+'cok','cook islands','oceania','polynesia','236','null',20000,'71.1',100
+'com','comoros','africa','eastern africa','1862','1975',578000,'60.0',4401
+'cub','cuba','north america','caribbean','110861','1902',11201000,'76.2',17843
+'cxr','christmas island','oceania','australia and new zealand','135','null',2500,'null',0
+'cym','cayman islands','north america','caribbean','264','null',38000,'78.9',1263
+'deu','germany','europe','western europe','357022','1955',82164700,'77.4',2133367
+'dji','djibouti','africa','eastern africa','23200','1977',638000,'50.8',382
+'dma','dominica','north america','caribbean','751','1978',71000,'73.4',256
+'dnk','denmark','europe','nordic countries','43094','800',5330000,'76.5',174099
+'ecu','ecuador','south america','south america','283561','1822',12646000,'71.1',19770
+'egy','egypt','africa','northern africa','1001449','1922',68470000,'63.3',82710
+'eri','eritrea','africa','eastern africa','117600','1993',3850000,'55.8',650
+'esh','western sahara','africa','northern africa','266000','null',293000,'49.8',60
+'est','estonia','europe','baltic countries','45227','1991',1439200,'69.5',5328
+'fin','finland','europe','nordic countries','338145','1917',5171300,'77.4',121914
+'fji','fiji islands','oceania','melanesia','18274','1970',817000,'67.9',1536
+'flk','falkland islands','south america','south america','12173','null',2000,'null',0
+'fra','france','europe','western europe','551500','843',59225700,'78.8',1424285
+'fsm','micronesia, federated states of','oceania','micronesia','702','1990',119000,'68.6',212
+'gab','gabon','africa','central africa','267668','1960',1226000,'50.1',5493
+'gbr','united kingdom','europe','british islands','242900','1066',59623400,'77.7',1378330
+'gha','ghana','africa','western africa','238533','1957',20212000,'57.4',7137
+'gib','gibraltar','europe','southern europe','6','null',25000,'79.0',258
+'glp','guadeloupe','north america','caribbean','1705','null',456000,'77.0',3501
+'gmb','gambia','africa','western africa','11295','1965',1305000,'53.2',320
+'gnq','equatorial guinea','africa','central africa','28051','1968',453000,'53.6',283
+'grd','grenada','north america','caribbean','344','1974',94000,'64.5',318
+'gtm','guatemala','north america','central america','108889','1821',11385000,'66.2',19008
+'gum','guam','oceania','micronesia','549','null',168000,'77.8',1197
+'guy','guyana','south america','south america','214969','1966',861000,'64.0',722
+'hkg','hong kong','asia','eastern asia','1075','null',6782000,'79.5',166448
+'hmd','heard island and mcdonald islands','antarctica','antarctica','359','null',0,'null',0
+'idn','indonesia','asia','southeast asia','1904569','1945',212107000,'68.0',84982
+'ind','india','asia','southern and central asia','3287263','1947',1013662000,'62.5',447114
+'iot','british indian ocean territory','africa','eastern africa','78','null',0,'null',0
+'irn','iran','asia','southern and central asia','1648195','1906',67702000,'69.7',195746
+'ita','italy','europe','southern europe','301316','1861',57680000,'79.0',1161755
+'jam','jamaica','north america','caribbean','10990','1962',2583000,'75.2',6871
+'jor','jordan','asia','middle east','88946','1946',5083000,'77.4',7526
+'jpn','japan','asia','eastern asia','377829','-660',126714000,'80.7',3787042
+'kaz','kazakstan','asia','southern and central asia','2724900','1991',16223000,'63.2',24375
+'ken','kenya','africa','eastern africa','580367','1963',30080000,'48.0',9217
+'kgz','kyrgyzstan','asia','southern and central asia','199900','1991',4699000,'63.4',1626
+'kir','kiribati','oceania','micronesia','726','1979',83000,'59.8',41
+'kna','saint kitts and nevis','north america','caribbean','261','1983',38000,'70.7',299
+'kwt','kuwait','asia','middle east','17818','1961',1972000,'76.1',27037
+'lao','laos','asia','southeast asia','236800','1953',5433000,'53.1',1292
+'lbr','liberia','africa','western africa','111369','1847',3154000,'51.0',2012
+'lby','libyan arab jamahiriya','africa','northern africa','1759540','1951',5605000,'75.5',44806
+'lca','saint lucia','north america','caribbean','622','1979',154000,'72.3',571
+'lie','liechtenstein','europe','western europe','160','1806',32300,'78.8',1119
+'lka','sri lanka','asia','southern and central asia','65610','1948',18827000,'71.8',15706
+'lso','lesotho','africa','southern africa','30355','1966',2153000,'50.8',1061
+'ltu','lithuania','europe','baltic countries','65301','1991',3698500,'69.1',10692
+'lva','latvia','europe','baltic countries','64589','1991',2424200,'68.4',6398
+'mac','macao','asia','eastern asia','18','null',473000,'81.6',5749
+'mar','morocco','africa','northern africa','446550','1956',28351000,'69.1',36124
+'mco','monaco','europe','western europe','2','1861',34000,'78.8',776
+'mda','moldova','europe','eastern europe','33851','1991',4380000,'64.5',1579
+'mdg','madagascar','africa','eastern africa','587041','1960',15942000,'55.0',3750
+'mdv','maldives','asia','southern and central asia','298','1965',286000,'62.2',199
+'mhl','marshall islands','oceania','micronesia','181','1990',64000,'65.5',97
+'mkd','macedonia','europe','southern europe','25713','1991',2024000,'73.8',1694
+'mlt','malta','europe','southern europe','316','1964',380200,'77.9',3512
+'mmr','myanmar','asia','southeast asia','676578','1948',45611000,'54.9',180375
+'mng','mongolia','asia','eastern asia','1566500','1921',2662000,'67.3',1043
+'mnp','northern mariana islands','oceania','micronesia','464','null',78000,'75.5',0
+'msr','montserrat','north america','caribbean','102','null',11000,'78.0',109
+'mtq','martinique','north america','caribbean','1102','null',395000,'78.3',2731
+'mus','mauritius','africa','eastern africa','2040','1968',1158000,'71.0',4251
+'mwi','malawi','africa','eastern africa','118484','1964',10925000,'37.6',1687
+'mys','malaysia','asia','southeast asia','329758','1957',22244000,'70.8',69213
+'myt','mayotte','africa','eastern africa','373','null',149000,'59.5',0
+'nam','namibia','africa','southern africa','824292','1990',1726000,'42.5',3101
+'ner','niger','africa','western africa','1267000','1960',10730000,'41.3',1706
+'nfk','norfolk island','oceania','australia and new zealand','36','null',2000,'null',0
+'nga','nigeria','africa','western africa','923768','1960',111506000,'51.6',65707
+'niu','niue','oceania','polynesia','260','null',2000,'null',0
+'nld','netherlands','europe','western europe','41526','1581',15864000,'78.3',371362
+'nor','norway','europe','nordic countries','323877','1905',4478500,'78.7',145895
+'npl','nepal','asia','southern and central asia','147181','1769',23930000,'57.8',4768
+'nru','nauru','oceania','micronesia','21','1968',12000,'60.8',197
+'nzl','new zealand','oceania','australia and new zealand','270534','1907',3862000,'77.8',54669
+'pak','pakistan','asia','southern and central asia','796095','1947',156483000,'61.1',61289
+'pcn','pitcairn','oceania','polynesia','49','null',50,'null',0
+'phl','philippines','asia','southeast asia','300000','1946',75967000,'67.5',65107
+'plw','palau','oceania','micronesia','459','1994',19000,'68.6',105
+'png','papua new guinea','oceania','melanesia','462840','1975',4807000,'63.1',4988
+'pol','poland','europe','eastern europe','323250','1918',38653600,'73.2',151697
+'pri','puerto rico','north america','caribbean','8875','null',3869000,'75.6',34100
+'pse','palestine','asia','middle east','6257','null',3101000,'71.4',4173
+'qat','qatar','asia','middle east','11000','1971',599000,'72.4',9472
+'rus','russian federation','europe','eastern europe','17075400','1991',146934000,'67.2',276608
+'rwa','rwanda','africa','eastern africa','26338','1962',7733000,'39.3',2036
+'sdn','sudan','africa','northern africa','2505813','1956',29490000,'56.6',10162
+'sgp','singapore','asia','southeast asia','618','1965',3567000,'80.1',86503
+'sgs','south georgia and the south sandwich islands','antarctica','antarctica','3903','null',0,'null',0
+'shn','saint helena','africa','western africa','314','null',6000,'76.8',0
+'sjm','svalbard and jan mayen','europe','nordic countries','62422','null',3200,'null',0
+'slb','solomon islands','oceania','melanesia','28896','1978',444000,'71.3',182`;
 var x= str.split("\n").map((e)=>"("+e+"),").join("\n")
 console.log(x)

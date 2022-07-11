@@ -23,6 +23,5 @@ The STATION table is described as follows:
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 */
 
-select round(min(lat_n),4)
-from station
-where lat_n>38.7780
+select round(max(lat_n)-min(lat_n) + max(long_w)-min(long_w),4)
+from station;

@@ -13,6 +13,21 @@ create table STUDENTS
 --            )
 -- from STUDENTS;
 
+create table grades
+(
+    Grade    int NULL,
+    Min_Mark int NULL,
+    Max_Mark int NULL
+);
+
+-- select concat_ws(
+--                ',',
+--                Grade,
+--                Min_Mark,
+--                Max_Mark
+--            )
+-- from grades;
+
 insert into STUDENTS(id, name, marks)
 VALUES (19, 'Samantha', 87),
        (21, 'Julia', 96),
@@ -39,3 +54,15 @@ VALUES (19, 'Samantha', 87),
        (16, 'Devil', 76),
        (34, 'Fanny', 75),
        (38, 'Danny', 75);
+
+insert into grades(Grade, Min_Mark, Max_Mark)
+values (1, 0, 9),
+       (2, 10, 19),
+       (3, 20, 29),
+       (4, 30, 39),
+       (5, 40, 49),
+       (6, 50, 59),
+       (7, 60, 69),
+       (8, 70, 79),
+       (9, 80, 89),
+       (10, 90, 100)

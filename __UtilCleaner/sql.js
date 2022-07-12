@@ -1,12 +1,20 @@
-var str=`1,0,9
-2,10,19
-3,20,29
-4,30,39
-5,40,49
-6,50,59
-7,60,69
-8,70,79
-9,80,89
-10,90,100`;
+var str=`'Ashley','Professor'
+'Samantha','Actor'
+'Julia','Doctor'
+'Britney','Professor'
+'Maria','Professor'
+'Meera','Professor'
+'Priya','Doctor'
+'Priyanka','Professor'
+'Jennifer','Actor'
+'Ketty','Actor'
+'Belvet','Professor'
+'Naomi','Professor'
+'Jane','Singer'
+'Jenny','Singer'
+'Kristeen','Singer'
+'Christeen','Singer'
+'Eve','Actor'
+'Aamina','Doctor'`;
 var x= str.split("\n").map((e)=>"("+e+"),").join("\n")
 console.log(x)

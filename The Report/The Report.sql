@@ -35,5 +35,14 @@ So, the following students got 8, 9 or 10 grades:
     Scarlet (grade 8)
 */
 
-
-
+select case
+           when grades.grade < 8 then 'NULL'
+           else students.name
+    end
+     , grade
+     , marks
+from students,
+     grades
+where grades.min_mark <= students.marks
+  and max_mark >= students.marks
+order by grade desc, students.name;
